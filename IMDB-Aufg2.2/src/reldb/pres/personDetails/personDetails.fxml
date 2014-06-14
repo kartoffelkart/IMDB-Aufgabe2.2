@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="632.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reldb.pres.personDetails.PersonDetailsController">
+    <stylesheets>
+        <URL value="@persondetails.css" />
+    </stylesheets>
+    <children>
+        <ScrollPane prefHeight="659.0" prefWidth="632.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <AnchorPane prefHeight="660.0" prefWidth="627.0">
+                    <children>
+                        <HBox layoutX="200.0048828125" layoutY="31.5">
+                            <children>
+                                <Label layoutX="200.0048828125" layoutY="31.5" text="Details of &quot; " underline="true">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="300.0" layoutY="32.0" text="name" underline="true">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="347.0" layoutY="32.0" text=" &quot; " underline="true">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Group>
+                            <children>
+                                <Label layoutX="143.0" layoutY="86.0" text="Size" />
+                                <Separator layoutX="14.0" layoutY="299.0" prefHeight="4.0" prefWidth="570.0" />
+                                <Button layoutX="463.0" layoutY="249.0" mnemonicParsing="false" text="Read full Biography" />
+                                <Group layoutX="-262.0" layoutY="65.0">
+                                    <children>
+                                        <Label layoutX="276.0" layoutY="88.0" text="Mini-Biography: " underline="true" />
+                                        <TextField layoutX="366.0" layoutY="93.0" prefHeight="83.0" prefWidth="480.0" />
+                                    </children>
+                                </Group>
+                                <Group layoutX="343.0" layoutY="-120.0">
+                                    <children>
+                                        <Label layoutX="28.0048828125" layoutY="240.5" text="Death Date &amp; Notes: " underline="true" />
+                                        <Label layoutX="28.0" layoutY="206.0" text="Birth Date &amp; Notes:" underline="true" />
+                                        <Label layoutX="157.0" layoutY="206.0" text="Birth Date usw" />
+                                        <Label layoutX="157.0" layoutY="241.0" text="Death Date usw" />
+                                    </children>
+                                </Group>
+                                <Label layoutX="14.0" layoutY="86.0" text="Size : " underline="true" />
+                            </children>
+                        </Group>
+                        <Group layoutX="-2.0" layoutY="-10.0">
+                            <children>
+                                <Group layoutX="14.0" layoutY="236.0">
+                                    <children>
+                                        <ListView layoutX="335.0" layoutY="115.0" prefHeight="83.0" prefWidth="235.0" />
+                                        <Label layoutX="334.5048828125" layoutY="87.0" text="Role Types: " underline="true" />
+                                    </children>
+                                </Group>
+                                <Group>
+                                    <children>
+                                        <Button layoutX="53.0" layoutY="605.0" mnemonicParsing="false" text="Show details for selected film" />
+                                        <Label layoutX="14.0" layoutY="323.0" text="Filmography:" underline="true" />
+                                        <ListView layoutX="14.0" layoutY="350.0" prefHeight="245.0" prefWidth="248.0" />
+                                    </children>
+                                </Group>
+                            </children>
+                        </Group>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

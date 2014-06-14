@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="632.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reldb.pres.titleDetails.TitleDetailsController">
+    <children>
+        <ScrollPane prefHeight="659.0" prefWidth="632.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <AnchorPane prefHeight="660.0" prefWidth="627.0">    
+                    <children>
+                        <Group>
+                            <children>
+                                <VBox layoutX="253.0" layoutY="26.0" prefHeight="48.0" prefWidth="260.0">
+                                    <children>
+                                        <HBox layoutX="507.0" layoutY="58.0" AnchorPane.topAnchor="29.0">
+                                            <children>
+                                                <Label fx:id="labelFilmType" layoutX="179.0" layoutY="29.0" text="Details of &quot; " underline="true">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label fx:id="labelFilmTitle" layoutX="274.0" layoutY="29.0" prefHeight="27.0" prefWidth="54.0" text="FilmName" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="328.0" layoutY="29.0" text=" &quot; ( " underline="true">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label fx:id="labelFilmYear" layoutX="360.0" layoutY="29.0" prefHeight="27.0" prefWidth="39.0" text="Year" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label layoutX="406.0" layoutY="29.0" text=")" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="506.0" layoutY="97.0" prefHeight="22.0" prefWidth="265.0" AnchorPane.topAnchor="68.0">
+                                            <children>
+                                                <Label layoutX="237.0" layoutY="67.0" text="Rated for age " />
+                                                <Label fx:id="labelFilmAge" layoutX="312.0048828125" layoutY="67.0" text="age" />
+                                                <Label layoutX="332.0" layoutY="67.0" text=" ( " />
+                                                <Label layoutX="336.0" layoutY="67.0" text="Germany" />
+                                                <Label layoutX="377.0048828125" layoutY="67.0" text=" )  | " />
+                                                <Label fx:id="labelGenreType" layoutX="394.009765625" layoutY="67.0" text="Genre" />
+                                                <Label layoutX="426.0" layoutY="67.0" text=" |  " />
+                                                
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <Label fx:id="labelTagLine" layoutX="331.0" layoutY="81.0" text="Tagline" />
+                            </children>
+                        </Group>
+                        <Group layoutY="-1.0">
+                            <children>
+                                <Label layoutX="14.0" layoutY="279.5" text="Budget:" AnchorPane.leftAnchor="14.0" />
+                                <Label layoutX="331.0048828125" layoutY="122.5" text="Plot: " AnchorPane.rightAnchor="384.9951171875" />
+                                <ListView fx:id="listViewRuntimes" layoutX="100.0" layoutY="122.5" prefHeight="88.0" prefWidth="200.0" AnchorPane.leftAnchor="100.0" />
+                                <Separator layoutX="316.0" layoutY="123.0" orientation="VERTICAL" prefHeight="200.0" />
+                                <Button layoutX="637.0" layoutY="331.5" mnemonicParsing="false" onAction="#buttonShowFullPlots" text="Read full Plots" AnchorPane.rightAnchor="14.0" />
+                                <Label layoutX="14.0" layoutY="250.5" text="Rating:" AnchorPane.leftAnchor="14.0" />
+                                <Label layoutX="14.0" layoutY="223.5" text="Release Date:" AnchorPane.leftAnchor="14.0" />
+                                <Label fx:id="labelRating" layoutX="100.0048828125" layoutY="250.5" text="Rating" AnchorPane.leftAnchor="100.0048828125" />
+                                <TextField fx:id="textFieldPlot" layoutX="358.0" layoutY="125.5" prefHeight="194.0" prefWidth="371.0" AnchorPane.rightAnchor="14.0" />
+                                <Label layoutX="14.0048828125" layoutY="122.5" text="Runtime(s):" AnchorPane.leftAnchor="14.0048828125" />
+                                <ListView fx:id="listViewReleaseDate" layoutX="100.0" layoutY="221.0" prefHeight="23.0" prefWidth="200.0" />
+                                <ListView fx:id="listViewBudget" layoutX="98.0" layoutY="285.0" prefHeight="23.0" prefWidth="202.0" />
+                            </children>
+                        </Group>
+                        <Group AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                            <children>
+                                <Separator layoutX="14.0" layoutY="522.5" prefHeight="7.0" prefWidth="723.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+                                <Label layoutX="14.0" layoutY="387.5" text="Books: " AnchorPane.leftAnchor="14.0" />
+                                <Separator layoutX="14.0" layoutY="374.0" prefHeight="0.0" prefWidth="722.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+                                <ListView fx:id="listViewBooks" layoutX="52.0" layoutY="387.5" prefHeight="122.0" prefWidth="675.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="14.0" />
+                            </children>
+                        </Group>
+                        <Group>
+                            <children>
+                                <Button layoutX="89.0" layoutY="1001.0" mnemonicParsing="false" onAction="#buttonOpenPersonDetails" text="Show details for selected person" AnchorPane.bottomAnchor="31.5" />
+                                <Label layoutX="170.0" layoutY="533.0" text="Cast:" underline="true" />
+                                <TableView layoutX="15.0" layoutY="560.0" prefHeight="431.0" prefWidth="335.0" AnchorPane.leftAnchor="14.0">
+                                    <columns>
+                                        <TableColumn prefWidth="96.0" text="Character Name" />
+                                        <TableColumn prefWidth="81.0" text="Person" />
+                                        <TableColumn prefWidth="73.0" text="Role Type" />
+                                        <TableColumn prefWidth="84.0" text="Note" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </Group>
+                        <Group>
+                            <children>
+                                <TableView layoutX="380.0" layoutY="788.0" prefHeight="200.0" prefWidth="344.0">
+                                    <columns>
+                                        <TableColumn prefWidth="71.0" text="Link Type" />
+                                        <TableColumn prefWidth="218.0" text="Title" />
+                                        <TableColumn prefWidth="54.0" text="Year" />
+                                    </columns>
+                                </TableView>
+                                <Label layoutX="521.0" layoutY="771.0" text="Linked Movies: " underline="true" />
+                                <Button layoutX="476.0" layoutY="1001.0" mnemonicParsing="false" onAction="#buttonOpenTitleDetails" text="Show details for selected title" />
+                                <TableView layoutX="380.0" layoutY="560.0" prefHeight="200.0" prefWidth="344.0" AnchorPane.rightAnchor="14.0">
+                                    <columns>
+                                        <TableColumn prefWidth="102.0" text="Company Name" />
+                                        <TableColumn prefWidth="108.0" text="Company Type" />
+                                        <TableColumn prefWidth="160.0" text="Note" />
+                                    </columns>
+                                </TableView>
+                                <Label layoutX="523.0048828125" layoutY="533.0" text="Companies:" underline="true" />
+                            </children>
+                        </Group>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

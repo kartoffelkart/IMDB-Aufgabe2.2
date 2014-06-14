@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="553.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reldb.pres.searchKeyword.SearchKeywordController">
+    <stylesheets>
+        <URL value="@searchkeyword.css" />
+    </stylesheets>
+    <children>
+        <Separator layoutX="147.6220703125" layoutY="348.5" prefHeight="0.0" prefWidth="198.0" />
+        <Button fx:id="buttonToSearch" layoutX="242.0" layoutY="440.0" mnemonicParsing="false" onAction="#buttonSearch" prefHeight="39.0" prefWidth="102.0" text="Search!" />
+        <CheckBox fx:id="checkDeSelectAll" layoutX="147.6220703125" layoutY="355.5" mnemonicParsing="false" text="De-/Select All" />
+        <CheckBox fx:id="checkCompanies" layoutX="147.6220703125" layoutY="325.5" mnemonicParsing="false" text="Companies" />
+        <CheckBox fx:id="checkCharacters" layoutX="147.6220703125" layoutY="295.5" mnemonicParsing="false" text="Characters" />
+        <CheckBox fx:id="checkPersons" layoutX="147.6220703125" layoutY="265.5" mnemonicParsing="false" text="Persons" />
+        <CheckBox fx:id="checkTitles" layoutX="147.6220703125" layoutY="235.5" mnemonicParsing="false" text="Titles" />
+        <Label layoutX="28.009765625" layoutY="235.5" text="Search for:" />
+        <Group>
+            <children>
+    
+                <RadioButton fx:id="buttonMatchExact" layoutX="367.0" layoutY="150.0" mnemonicParsing="false" text="match exact">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroup1" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="buttonMatchAny" layoutX="255.0" layoutY="150.0" mnemonicParsing="false" text="match any" toggleGroup="$toggleGroup1" />
+                <RadioButton fx:id="buttonMatchAll" layoutX="150.0439453125" layoutY="149.5" mnemonicParsing="false" text="match all" toggleGroup="$toggleGroup1" />
+            </children>
+        </Group>
+        <Label layoutX="28.0048828125" layoutY="113.0" text="Keyword/Phrase" />
+        <Label layoutX="150.0048828125" layoutY="59.5" text="Search for keywords/phrase" underline="true">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="textFieldSearch" layoutX="150.0" layoutY="109.0" prefHeight="25.0" prefWidth="361.0" />
+    </children>
+</AnchorPane>

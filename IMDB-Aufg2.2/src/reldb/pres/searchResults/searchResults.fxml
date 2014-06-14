@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="609.0" prefWidth="473.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reldb.pres.searchResults.SearchResultsController">
+    <stylesheets>
+        <URL value="@searchresults.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="26.0" layoutY="21.0" text="Search Results" underline="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TabPane layoutX="14.0" layoutY="53.0" prefHeight="516.0" prefWidth="446.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="53.0">
+            <tabs>
+                <Tab text="Titles">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="145.0" layoutY="447.0" mnemonicParsing="false" onAction="#showTitleDetails" text="Show Details For Selection" AnchorPane.bottomAnchor="25.0"/>
+                                <TableView fx:id="tableTitles" layoutX="76.0" layoutY="135.0" prefHeight="428.0" prefWidth="446.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="columnTKind" minWidth="0.0" prefWidth="85.0" text="Kind" />
+                                        <TableColumn fx:id="columnTTitle" prefWidth="304.0" text="Title" />
+                                        <TableColumn fx:id="columnTYear" prefWidth="56.0" text="Year" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Persons">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="145.0" layoutY="447.0" mnemonicParsing="false" onAction="#showPersonDetails" text="Show Details For Selection" AnchorPane.bottomAnchor="25.0" />
+                                <TableView fx:id="tablePersons" layoutX="76.0" layoutY="135.0" prefHeight="428.0" prefWidth="446.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="columnPName" prefWidth="241.0" text="Name" />
+                                        <TableColumn fx:id="columnPGender" prefWidth="69.0" text="Gender" />
+                                        <TableColumn fx:id="columnPBirth" prefWidth="135.0" text="Birth Date" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Character Names">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="tableCharacters" layoutX="76.0" layoutY="135.0" prefHeight="428.0" prefWidth="446.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="columnChRole" prefWidth="103.0" text="Role" />
+                                        <TableColumn fx:id="columnChActor" prefWidth="118.0" text="Actor/Person" />
+                                        <TableColumn fx:id="columnChTitle" prefWidth="167.0" text="Film Title" />
+                                        <TableColumn fx:id="columnChYear" prefWidth="57.0" text=" Year" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Companies">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="tableCompanies" layoutX="76.0" layoutY="135.0" prefHeight="422.0" prefWidth="446.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="columnCoName" prefWidth="316.0" text="Company Name" />
+                                        <TableColumn fx:id="columnCoType" prefWidth="129.0" text="Company Type" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Button fx:id="buttonCloseWindow" layoutX="191.0" layoutY="555.0" mnemonicParsing="false" onAction="#closeWindow" text="Close Window" AnchorPane.bottomAnchor="20.0" />
+    </children>
+</AnchorPane>

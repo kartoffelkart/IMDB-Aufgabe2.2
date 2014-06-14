@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="542.0" prefWidth="557.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reldb.pres.mainmenu.MainMenuController">
+  <children>
+    <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="557.0" useSystemMenuBar="false">
+      <menus>
+        <Menu mnemonicParsing="false" text="search IMDB">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#openSearchKeyword" text="search for keyword/phrase" />
+            <MenuItem mnemonicParsing="false" onAction="#openExtendedSearch" text="extended title search" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Rent-A-Movie">
+          <items>
+            <MenuItem mnemonicParsing="false" text="view rentlists" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <AnchorPane fx:id="mainAnchorPane" layoutY="25.0" prefHeight="517.0" prefWidth="557.0" />
+  </children>
+  <stylesheets>
+    <URL value="@mainmenu.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,4 @@
+Jun 05, 2014 6:13:58 PM reldb.data.DbConnectionOracle openConnection
+INFORMATION: Database connection established
+Jun 05, 2014 6:13:58 PM reldb.app.LoginApp oracleUserLogin
+INFORMATION: Oracle-Login successful for user s6mebrue

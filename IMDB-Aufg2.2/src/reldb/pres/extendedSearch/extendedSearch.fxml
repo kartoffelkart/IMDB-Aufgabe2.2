@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children>
+<AnchorPane cacheShape="false" layoutX="5.0" layoutY="92.5">
+<children>
+<VBox layoutX="575.0" layoutY="102.5" prefHeight="171.0" prefWidth="200.0" spacing="5.0">
+<children>
+<HBox spacing="20.0">
+<children><Text layoutX="590.931640625" layoutY="204.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Genres:" underline="true" /><Button layoutX="649.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="+add row" textAlignment="RIGHT" />
+</children>
+</HBox>
+<HBox spacing="5.0">
+<children><ChoiceBox prefWidth="150.0" />
+<Button layoutX="725.0" layoutY="238.0" mnemonicParsing="false" text="-" />
+</children>
+</HBox>
+<HBox spacing="5.0">
+<children>
+<ChoiceBox layoutX="31.0" layoutY="10.0" prefWidth="150.0" />
+<Button layoutX="714.0" layoutY="275.0" mnemonicParsing="false" text="-" />
+</children>
+</HBox>
+</children>
+</VBox>
+<VBox layoutY="53.5" spacing="20.0">
+<children>
+<HBox alignment="TOP_CENTER" layoutX="-10.0" layoutY="146.0" spacing="20.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+<children><Text layoutY="0.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="Search for:" />
+<VBox layoutX="177.857421875">
+<children><CheckBox layoutX="177.857421875" mnemonicParsing="false" text="Video Movie" /><CheckBox layoutX="178.146484375" layoutY="35.0" mnemonicParsing="false" text="TV Movie" />
+</children>
+</VBox><CheckBox layoutX="96.857421875" mnemonicParsing="false" text="Movie" />
+<VBox layoutX="258.08984375">
+<children><CheckBox layoutX="258.08984375" mnemonicParsing="false" text="TV Series" /><CheckBox layoutX="258.37890625" layoutY="35.0" mnemonicParsing="false" text="TV Mini Series" />
+</children>
+</VBox><CheckBox layoutX="445.857421875" mnemonicParsing="false" text="De-/Select All" />
+<VBox layoutX="357.857421875">
+<children><CheckBox layoutX="357.857421875" mnemonicParsing="false" text="Video Game" /><CheckBox layoutX="358.068359375" layoutY="35.5" mnemonicParsing="false" text="Episode" />
+</children>
+</VBox>
+</children>
+</HBox>
+<HBox layoutX="110.7890625" layoutY="222.0" spacing="10.0">
+<children><CheckBox layoutX="110.7890625" layoutY="225.5" mnemonicParsing="false" text="filter:" /><Text layoutX="159.220703125" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Production year after" /><ChoiceBox layoutX="271.0" layoutY="222.0" prefWidth="150.0" /><Text layoutX="441.96484375" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="and before" />
+<ChoiceBox layoutX="508.0" layoutY="226.0" prefWidth="150.0" />
+</children>
+</HBox>
+<HBox layoutX="121.0" layoutY="232.0" spacing="10.0">
+<children>
+<CheckBox layoutX="110.7890625" layoutY="225.5" mnemonicParsing="false" text="filter:" />
+<Text layoutX="159.220703125" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Production year after" />
+<ChoiceBox layoutX="271.0" layoutY="222.0" prefWidth="150.0" />
+<Text layoutX="441.96484375" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="and before" />
+<ChoiceBox layoutX="508.0" layoutY="226.0" prefWidth="150.0" />
+</children>
+</HBox>
+<HBox layoutX="131.0" layoutY="242.0" spacing="10.0">
+<children>
+<CheckBox layoutX="110.7890625" layoutY="225.5" mnemonicParsing="false" text="filter:" />
+<Text layoutX="159.220703125" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Production year after" />
+<ChoiceBox layoutX="271.0" layoutY="222.0" prefWidth="150.0" />
+<Text layoutX="441.96484375" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="and before" />
+<ChoiceBox layoutX="508.0" layoutY="226.0" prefWidth="150.0" />
+</children>
+</HBox>
+<HBox layoutX="141.0" layoutY="252.0" spacing="10.0">
+<children>
+<CheckBox layoutX="110.7890625" layoutY="225.5" mnemonicParsing="false" text="filter:" />
+<Text layoutX="159.220703125" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Production year after" />
+<ChoiceBox layoutX="271.0" layoutY="222.0" prefWidth="150.0" />
+<Text layoutX="441.96484375" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="and before" />
+<ChoiceBox layoutX="508.0" layoutY="226.0" prefWidth="150.0" />
+</children>
+</HBox>
+<HBox layoutX="151.0" layoutY="262.0" spacing="10.0">
+<children>
+<CheckBox layoutX="110.7890625" layoutY="225.5" mnemonicParsing="false" text="filter:" />
+<Text layoutX="159.220703125" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Production year after" />
+<ChoiceBox layoutX="271.0" layoutY="222.0" prefWidth="150.0" />
+<Text layoutX="441.96484375" layoutY="242.5" strokeType="OUTSIDE" strokeWidth="0.0" text="and before" />
+<ChoiceBox layoutX="508.0" layoutY="226.0" prefWidth="150.0" />
+</children>
+</HBox>
+</children>
+</VBox>
+<HBox fx:id="titleLine" alignment="TOP_CENTER" spacing="20.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+<children><Text layoutX="56.931640625" layoutY="66.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:">
+<font>
+<Font name="System Bold" size="12.0" />
+</font></Text><TextField layoutX="64.7900390625" layoutY="92.5" /><RadioButton layoutX="213.5439453125" layoutY="96.5" mnemonicParsing="false" text="match all" /><RadioButton layoutX="334.5439453125" layoutY="96.5" mnemonicParsing="false" text="match any" /><RadioButton layoutX="445.5439453125" layoutY="96.5" mnemonicParsing="false" text="match exact" />
+</children>
+</HBox>
+</children>
+</AnchorPane><Text layoutX="327.931640625" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="extended Title Search" textAlignment="CENTER" underline="true" />
+<VBox layoutX="5.0" layoutY="424.0" spacing="5.0">
+<children>
+<HBox layoutX="53.931640625">
+<children><Text layoutX="58.931640625" layoutY="407.5" strokeType="OUTSIDE" strokeWidth="0.0" text="with person:    ">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+</Text><Button layoutX="142.0" layoutY="398.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="+add row" textAlignment="RIGHT" />
+</children>
+</HBox>
+<HBox layoutY="25.0" spacing="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+<children>
+<Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                       ">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+</Text><ChoiceBox layoutX="110.0" layoutY="419.55078125" prefWidth="150.0" />
+<TextField layoutX="374.5" layoutY="422.0" prefHeight="25.0" prefWidth="470.0" />
+<Button layoutX="547.5" layoutY="419.5" mnemonicParsing="false" text="-" />
+</children>
+</HBox>
+<HBox layoutX="105.0" layoutY="50.44921875" spacing="5.0">
+<children><Text layoutX="87.431640625" layoutY="449.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="               AND" textAlignment="RIGHT">
+<font>
+<Font name="System Bold" size="12.0" />
+</font></Text>
+<ChoiceBox layoutX="110.0" layoutY="419.55078125" prefWidth="150.0" />
+<TextField layoutX="374.5" layoutY="422.0" prefHeight="25.0" prefWidth="470.0" />
+<Button layoutX="547.5" layoutY="419.5" mnemonicParsing="false" text="-" />
+</children>
+</HBox>
+</children>
+</VBox>
+<VBox layoutX="5.0" layoutY="529.0" spacing="5.0">
+<children>
+<HBox layoutX="53.931640625">
+<children>
+<VBox>
+<children>
+<Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with ">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+</Text>
+<Text layoutX="58.931640625" layoutY="407.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Charactername:">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+</Text>
+</children>
+</VBox>
+<Button layoutX="142.0" layoutY="398.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="+add row" textAlignment="RIGHT" />
+</children>
+</HBox>
+<HBox layoutY="25.0" spacing="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+<children>
+<Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                       ">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+</Text>
+<ChoiceBox layoutX="110.0" layoutY="419.55078125" prefWidth="150.0" />
+<TextField layoutX="374.5" layoutY="422.0" prefHeight="25.0" prefWidth="470.0" />
+<Button layoutX="547.5" layoutY="419.5" mnemonicParsing="false" text="-" />
+</children>
+</HBox>
+<HBox layoutX="105.0" layoutY="50.44921875" spacing="5.0">
+<children>
+<Text layoutX="87.431640625" layoutY="449.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="               AND" textAlignment="RIGHT">
+<font>
+<Font name="System Bold" size="12.0" />
+</font>
+</Text>
+<ChoiceBox layoutX="110.0" layoutY="419.55078125" prefWidth="150.0" />
+<TextField layoutX="374.5" layoutY="422.0" prefHeight="25.0" prefWidth="470.0" />
+<Button layoutX="547.5" layoutY="419.5" mnemonicParsing="false" text="-" />
+</children>
+</HBox>
+</children>
+</VBox><Button layoutX="385.0" layoutY="641.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Search!" textAlignment="CENTER" />
+</children>
+<opaqueInsets>
+<Insets />
+</opaqueInsets></AnchorPane>
